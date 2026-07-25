@@ -1,13 +1,31 @@
 /* visual aesthetics styling */
 
 body {
-    background-image: url("../images/fmnver2.png");
+    
     background-color: grey;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    animation: change-color 5s infinite alternate; 
+    opacity: 100%;
 }
 
+@keyframes change-color {
+    0% {
+        background-color: gray;
+    }
+    50%{
+        background-color: grey;
+    }
+    100% {
+        background-image: url("../images/fmnver2.png");
+    }
+}
+
+@keyframes opacity {
+    0%
+}
 
 p {
     background: white;
